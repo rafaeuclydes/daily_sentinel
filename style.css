@@ -10,7 +10,7 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "cabecalho cabecalho" "principal lateral" "rodape rodape";
   gap: 20px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ddebef;
