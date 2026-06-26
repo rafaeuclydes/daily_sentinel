@@ -75,6 +75,10 @@ body {
   margin-bottom: 12px;
 }
 
+.destaque img {
+  width: 850px;
+}
+
 .resumo {
   font-size: 18px;
   color: #535353;
