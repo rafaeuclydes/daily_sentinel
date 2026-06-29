@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Sentinel</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/mini-logo.png"
+      type="image/x-icon"
+    />
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/news-card.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
+  </head>
+  <body>
+    <site-header></site-header>
+
+    <div class="conteudo">
+      <main class="principal">
+        <article class="cartao cartao--destaque">
+          <span class="categoria">Destaque</span>
+          <h1 class="cartao__titulo">
+            Vingadores impedem invasão temporal em Nova York
+          </h1>
+          <img src="/assets/avengers.png" alt="Imagem dos Avengers" />
+          <p class="cartao__resumo">
+            Após horas de confronto, os Vingadores conseguiram conter uma ameaça
+            multiversal liderada por variantes de Kang. Autoridades confirmam
+            que a estabilidade temporal foi restaurada e a cidade já inicia os
+            trabalhos de reconstrução.
+          </p>
+        </article>
+
+        <section class="noticias">
+          <news-card
+            categoria="Política"
+            titulo="Wakanda propõe acordo global sobre vibranium"
+            resumo="Representantes de mais de 40 países participaram de uma reunião histórica com o governo de Wakanda para discutir o uso responsável de tecnologias avançadas. O acordo promete gerar debates entre líderes mundiais e especialistas em segurança."
+          ></news-card>
+          <news-card
+            categoria="Ciência & Tecnologia"
+            titulo="Quarteto Fantástico avança em pesquisa multiversal"
+            resumo="Pesquisadores do Edifício Baxter divulgaram resultados promissores
+            de um projeto que busca compreender melhor os universos paralelos. A
+            descoberta pode revolucionar o transporte interdimensional nas
+            próximas décadas."
+          ></news-card>
+          <news-card
+            categoria="Celebridades & Fofocas"
+            titulo="Peter Parker e MJ alimentam rumores"
+            resumo="Os dois foram vistos conversando durante horas em uma arrecadação
+            organizada pelos Vingadores. Nenhum dos envolvidos comentou os
+            rumores, mas fãs já movimentam as redes sociais com especulações."
+          ></news-card>
+          <news-card
+            categoria="Esportes"
+            titulo="Terra vence estreia em torneio intergaláctico"
+            resumo="O evento esportivo mais aguardado do ano começou ontem com disputas
+            envolvendo diferentes espécies e planetas. A equipe terrestre venceu
+            a partida de estreia e já é considerada uma das favoritas ao título."
+          ></news-card>
+        </section>
+      </main>
+
+      <aside class="lateral">
+        <div class="caixa">
+          <h3>Mais lidas</h3>
+          <ol>
+            <li>Deadpool invade transmissão ao vivo e gera caos na internet</li>
+            <li>Loki reaparece misteriosamente após nova anomalia temporal</li>
+            <li>
+              Tony Stark lidera ranking dos maiores inventores da história
+            </li>
+            <li>
+              Thor quebra recorde em competição amistosa de força em Asgard
+            </li>
+            <li>X-Men inauguram programa de bolsas para jovens mutantes</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+
+    <site-footer></site-footer>
+  </body>
+</html>

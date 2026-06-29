@@ -1,0 +1,29 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 4px solid var(--cor-detalhes);
+  background-color: var(--cor-fundo);
+}
+
+.logo {
+  display: flex;
+  width: 130px;
+}
+
+.menu {
+  display: flex;
+  gap: 26px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--cor-titulos);
+}
+
+.menu a:hover {
+  transform: scale(1.2);
+  color: var(--cor-destaque);
+}

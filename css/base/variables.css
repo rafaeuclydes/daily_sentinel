@@ -1,0 +1,12 @@
+:root {
+  --cor-fundo: #ddebef;
+  --cor-texto: #535353;
+  --cor-destaque: #704569;
+  --cor-secundaria: #fff;
+  --cor-detalhes: #558c9e;
+  --cor-titulos: #000;
+
+  --fonte-geral: Arial, Helvetica, sans-serif;
+
+  --raio: 8px;
+}

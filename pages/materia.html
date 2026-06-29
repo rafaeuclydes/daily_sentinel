@@ -3,22 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./materia.css" />
-    <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon" />
-    <title>Matéria</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/news-card.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
+    <title>Novo casal na área</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <a href="index.html">
-        <img src="./assets/logo.png" alt="" class="logo" />
-      </a>
-      <nav class="menu">
-        <a href="#">Política</a>
-        <a href="#">Ciência & Tecnologia</a>
-        <a href="#">Celebridades & Fofocas</a>
-        <a href="#">Esportes</a>
-      </nav>
-    </header>
+    <site-header></site-header>
 
     <nav class="trilha">
       <a href="./index.html">Início</a>
@@ -48,8 +41,8 @@
             <span class="data">26 de Junho de 2026 - 5 min de leitura</span>
           </div>
           <div class="compartilhar">
-            <button>Compartilhar</button>
-            <button>Salvar</button>
+            <button class="btn">Compartilhar</button>
+            <button class="btn">Salvar</button>
           </div>
         </div>
 
@@ -134,7 +127,7 @@
             id="email"
             placeholder="seu@email.com"
           />
-          <button>Assinar</button>
+          <button class="btn btn--primary">Assinar</button>
         </div>
       </aside>
     </div>
@@ -142,53 +135,24 @@
     <section class="relacionados">
       <h2>Leia também</h2>
       <div class="grade">
-        <article class="cartao">
-          <span class="categoria">Política</span>
-          <h3>
-            Acordos de Sokovia na vida real? Países debatem regulamentação
-            global para inteligências artificiais autônomas
-          </h3>
-        </article>
-
-        <article class="cartao">
-          <span class="categoria">Ciência & Tecnologia</span>
-          <h3>
-            De Stark à realidade: Cientistas desenvolvem prótese neural
-            inspirada na armadura do Homem de Ferro
-          </h3>
-        </article>
-
-        <article class="cartao">
-          <span class="categoria">Esportes</span>
-          <h3>
-            Atleta olímpico bate recorde mundial e fãs o apelidam de "O herói de
-            Wakanda
-          </h3>
-        </article>
+        <news-card
+          categoria="Política"
+          titulo="Acordos de Sokovia na vida real? Países debatem regulamentação
+            global para inteligências artificiais autônomas"
+        ></news-card>
+        <news-card
+          categoria="Ciência & Tecnologia"
+          titulo="De Stark à realidade: Cientistas desenvolvem prótese neural
+            inspirada na armadura do Homem de Ferro"
+        ></news-card>
+        <news-card
+          categoria="Esportes"
+          titulo="Atleta olímpico bate recorde mundial e fãs o apelidam de 'O herói de
+            Wakanda'"
+        ></news-card>
       </div>
     </section>
 
-    <footer class="rodape">
-      <div class="coluna">
-        <h4>
-          <strong>Daily Sentinel</strong>
-        </h4>
-        <p>Garantindo a noticia</p>
-      </div>
-      <div class="coluna">
-        <h4>Editoriais</h4>
-        <a href="#">Política</a>
-        <a href="#">Ciência & Tecnologia</a>
-        <a href="#">Celebridades & Fofocas</a>
-        <a href="#">Esportes</a>
-      </div>
-      <div class="coluna">
-        <h4>Institucional</h4>
-        <a href="#">Termos de Uso</a>
-        <a href="#">Privacidade</a>
-        <a href="#">Quem somos</a>
-        <a href="#">Contatos</a>
-      </div>
-    </footer>
+    <site-footer></site-footer>
   </body>
 </html>

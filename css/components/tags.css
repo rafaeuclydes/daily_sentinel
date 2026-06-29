@@ -1,0 +1,28 @@
+/*Tags*/
+.categoria {
+  display: inline-block;
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: var(--raio);
+  padding: 3px 8px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tags {
+  display: flex;
+  gap: 15px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.tags a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 13px;
+  background: var(--cor-secundaria);
+  border-radius: 16px;
+  padding: 6px 12px;
+}

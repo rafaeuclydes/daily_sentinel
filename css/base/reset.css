@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-geral);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: var(--cor-fundo);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+site-header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+site-header,
+site-footer,
+news-card {
+  display: block;
+}

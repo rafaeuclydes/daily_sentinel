@@ -1,0 +1,27 @@
+/*Rodapé*/
+.rodape {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  background-color: var(--cor-detalhes);
+  color: var(--cor-secundaria);
+  padding: 32px;
+  border-radius: var(--raio);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.rodape h4 {
+  margin-bottom: 10px;
+}
+
+.rodape a {
+  display: block;
+  text-decoration: none;
+  color: var(--cor-texto);
+  margin-bottom: 6px;
+}
+
+.rodape a:hover {
+  color: var(--cor-secundaria);
+}
